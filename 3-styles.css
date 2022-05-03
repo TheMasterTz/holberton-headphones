@@ -1,0 +1,437 @@
+:root {
+    --color-primary: #D73953;
+    --button-color: #FF6565;
+    --text-color: #FFFFFF;
+    --font-family: Source Sans Pro;
+	--icons-color: var(--button-color);
+    --font-size-icons: 130px;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+.container {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100rem;
+	height: 100vh;
+    justify-content: center;
+    color: var(--text-color-light);
+    text-align: center;
+}
+
+.container .header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-logo {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+.navbar-menu .nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    white-space: nowrap;
+}
+
+
+.navbar-menu .nav .nav-item {
+    display: inline;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 1.5rem;
+}
+
+
+.nav .nav-item .nav-link {
+    padding-right: 5rem;
+    top: 3.7rem;
+    width: 2.55rem;
+    height: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav .nav-item .nav-link:hover {
+    color: var(--color-primary);
+}
+
+.hero {
+    text-align: center;
+    padding-top: 40rem;
+    color: var(--text-color);
+    text-decoration: none;
+
+}
+
+.hero h1 {
+    font-family: var(--font-family);
+    font-size: 5rem;
+	margin: 0 2rem;
+}
+
+.hero span {
+    display: block;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: .7rem;
+}
+
+.hero .button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.Paragraph {
+    font-size: 1.5rem;
+    font-family: var(--text-color);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 55rem;
+    margin-top: 6.5rem;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon > span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 9999px;
+    -webkit-border-radius: 9999px;
+    -moz-border-radius: 9999px;
+    -ms-border-radius: 9999px;
+    -o-border-radius: 9999px;
+    background-color: #FFFFFF;
+}
+
+.menu-icon > span:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.menu-icon > span:nth-child(2) {
+    width: 20px;
+}
+
+.menu-icon > span:nth-child(3) {
+    width: 26px;
+}
+
+
+.menu-icon, .menu-icon > span {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+/* What we do Section */
+
+.content-section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.sect-what {
+	width: 80%;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 2.3rem;
+}
+
+.sect-what .title {
+	line-height: 3.3rem;
+}
+
+.lorem {
+	margin: 10rem 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lorem .title {
+	margin-bottom: 5rem;
+	font-size: 3rem;
+}
+
+.lorem .first-paragraph {
+	width: 75rem;
+}
+
+.icons {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+	margin-bottom: 10rem;
+}
+
+.icon {
+	min-width: 150px;
+	max-width: 250px;
+	margin-bottom: 3rem;
+}
+
+.icon h3 {
+	margin-bottom: 2rem;
+}
+
+[class*='holberton_school-icon-'] {
+	color: var(--icons-color);
+    font-size: var(--font-size-icons);
+}
+
+.img {
+	background: url(/images/headphones_hero_2.jpg) no-repeat;
+	background-position: center;
+    background-size: cover;
+    justify-content: center;
+    color: var(--text-color-light);
+    text-align: center;
+}
+
+.pentagon {
+	background: url(/images/pentagone.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 20rem;
+	width: 21rem;
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.pentagon h3 {
+	font-size: 5rem;
+	margin-bottom: 2rem;
+}
+
+.pentagon p {
+	margin-bottom: 5rem;
+}
+
+.form-main {
+	margin-top: 1rem;
+	margin-bottom: 10rem;
+}
+
+.form-main form {
+	display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-main form input {
+	border: none;
+	border-bottom: 1px solid #07162981;
+	margin-bottom: 2.5rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 3.3rem;
+	width: 50rem;
+}
+
+::placeholder {
+	color: #071629;
+}
+
+.btn-button {
+	color: var(--text-color);
+    font-family: var(--font-family);
+    background: var(--button-color);
+    width: 16rem;
+    height: 4.4rem;
+    border-radius: 2.2rem;
+    text-transform: uppercase;
+    border-style: none;
+    margin: 4rem;
+}
+
+@media only screen and (max-width:880px) {
+    .menu-icon {
+        display: block;
+        z-index: 1;
+        margin-right: 3rem;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .menu-btn:checked ~.navbar-menu {
+        display: inline-block;
+    }
+
+    .menu-btn:checked ~ .container-2 .menu-icon {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+
+    .menu-btn:checked ~ .container-2 .menu-icon > span:nth-child(1) {
+        transform: translateY(9px);
+        -webkit-transform: translateY(9px);
+        -moz-transform: translateY(9px);
+        -ms-transform: translateY(9px);
+        -o-transform: translateY(9px);
+    }
+
+    .menu-btn:checked ~ .container-2 .menu-icon > span:nth-child(2) {
+        width: 0px;
+    }
+
+    .menu-btn:checked ~ .container-2 .menu-icon > span:nth-child(3) {
+        transform: translateY(-9px) rotate(90deg);
+        -webkit-transform: translateY(-9px) rotate(90deg);
+        -moz-transform: translateY(-9px) rotate(90deg);
+        -ms-transform: translateY(-9px) rotate(90deg);
+        -o-transform: translateY(-9px) rotate(90deg);
+        width: 26px;
+    }
+
+    .navbar-menu .nav {
+        top: 50%;
+        left: 1rem;
+        margin: 2rem 0 -30rem 5rem;
+    }
+
+    .navbar-menu .nav .nav-item {
+        display: flex;
+        font-size: 2.5rem;
+        margin: 4rem;
+    }
+
+    .container-2 {
+        display: flex;
+        align-items: center;
+		margin-top: 1.5rem;
+    }
+
+    .container .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar-menu .nav {
+        flex-direction: column;
+    }
+
+	.lorem .first-paragraph {
+		width: 55rem;
+	}
+}
+
+
+@media only screen and (max-width:662px) {
+
+    *,
+    *:before,
+    *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: auto;
+    }
+
+	.container{
+		height: 100vh;
+	}
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .navbar-menu .nav {
+        top: 50%;
+        left: 1rem;
+        margin: 2rem 10rem -30rem 0rem;
+    }
+
+    .hero span {
+        font-size: 1.3rem;
+    }
+
+    .Paragraph {
+        font-size: rem;
+        width: 30rem;
+    }
+
+	.lorem .title {
+		margin-bottom: 5rem;
+		font-size: 2.5rem;
+	}
+
+	.lorem .first-paragraph {
+		width: 45rem;
+	}
+}
+
+@media only screen and (max-width:526px) {
+	.pentagon {
+		height: 15rem;
+		width: 16rem;
+	}
+
+	.pentagon h3 {
+		font-size: 4rem;
+		margin-bottom: 1rem;
+	}
+
+	.pentagon p {
+		margin-bottom: 4rem;
+	}
+
+	.form-main form input {
+		width: 30rem;
+	}
+}
