@@ -298,27 +298,36 @@ footer {
     align-items: center;
 }
 
-.footer-logo {
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-}
-
 .social {
 	display: flex;
-	margin-bottom: 10rem;
 	list-style-type: none;
 }
 
 .social-item [class*='holberton_school-icon-'] {
 	color: whitesmoke;
 	font-size: 4.2rem;
-	margin-right: 2rem;
-	margin-left: 2rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 .social-item a {
 	outline: none;
 	text-decoration: none;
+}
+
+.container-footer {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.copy {
+    margin-bottom: 1rem;
+    color: #757f8b;
 }
 
 @media only screen and (max-width:880px) {
@@ -464,4 +473,8 @@ footer {
 	.form-main form input {
 		width: 30rem;
 	}
+
+    .container-footer a img {
+        margin-bottom: 2rem;
+    }
 }
